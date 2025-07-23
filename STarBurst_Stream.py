@@ -1,7 +1,7 @@
 ms = 300
-Wp1 = 10
+Wp1 = 15
 Wp2 = 20
-Wp3 = 30
+Wp3 = 35
 while True:
     Pdicition = input("พิมเลข 1/2 (1 to Continue, 2 to Quit): ")
     
@@ -26,13 +26,16 @@ while True:
                 print("อาวุธไม่ถูกต้องควายโง่")
             
             print("Monster HP เหลือ: ", ms)
+            print("เหลือกอีก", Times - i - 1, "ครั้ง")
             
             if ms == 0:
                 print("Monster ตายแล้ว")
                 break
             elif ms < 0:
-                print("Monster HP Reset to Full")
-                ms = 300
+                print("Monster Heal to 20 Hp")
+                ms = 20
             if i == Times - 1:
                 print("U dead Noob")
                 break
+    print("จบเกมแล้วไปอาบน้ำเถอะ")
+    break
