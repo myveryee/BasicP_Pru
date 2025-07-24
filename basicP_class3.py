@@ -53,7 +53,8 @@
 #     i += 1
 #     print(i)
 
-while True:
-    option = input("enternumber: ")
-    if option == "2":
-        break
+# while True:
+#     option = input("enternumber: ")
+#     if option == "2":
+#         break
+
